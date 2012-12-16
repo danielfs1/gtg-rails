@@ -1,0 +1,9 @@
+/* IE7 FIXES */
+#header {position:relative;height:127px;position:relative;z-index:999;}
+#navigation {margin-top:-100px;position:relative;z-index:999;}
+.sf-menu {position:relative;z-index:80;}
+#carousel-wrap {padding-bottom:0;}
+#featured-cat-lists ul {list-style: none outside url("images/arrow.png");padding-left:20px;}
+#category-posts {width:570px;}
+.slider-nav {margin-top:-160px;} 
+.slider-shadow {position:relative;top:-120px;z-index:20}

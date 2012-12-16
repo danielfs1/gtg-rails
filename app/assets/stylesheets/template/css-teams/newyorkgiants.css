@@ -1,0 +1,8 @@
+/* New York Giants - newyorkgiants.css */
+
+#slider-wrap {background: url(../css-teams/newyorkgiants/slider-bg.png) top left repeat-x #0e264e!important;}
+
+.cat-post-title a:hover, #featured-cat-lists ul a:hover,.page-navigation a:hover, #navigation ul li a:hover, ul.nav, #navigation li.current_page_item, #navigation li.current_page_item a, .callaction-text strong,
+.home-post-title a:hover,.single-title a:hover , .blog-title a:hover ,#posts #comments h3,#posts #comments #respond form input.commentsubmit:hover,#sidebar ul a:hover,
+#footer a:hover,#footer ul a:hover,#sitemap ul a:hover {color:#b70a08!important;}
+#navigation .sf-menu li ul li a:hover {color: #b70a08 !important;}

@@ -1,0 +1,130 @@
+<div id="footer">
+	<div class="center">
+		<div class="footer-block">		
+			<h2>Recent Posts</h2>		
+			<ul>
+				<li><a href="#" title="Sed cursus mauris eget libero">Sed cursus mauris eget libero</a></li>
+				<li><a href="#" title="Quisque a arcu eu dui hendrerit">Quisque a arcu eu dui hendrerit</a></li>
+				<li><a href="#" title="Pellentesque vitae lacus vitae leo">Pellentesque vitae lacus vitae leo</a></li>
+				<li><a href="#" title="Vel lacinia nulla ligula sed neque!">Vel lacinia nulla ligula sed neque!</a></li>
+				<li><a href="#" title="Testing The Theme Elements">Testing The Theme Elements</a></li>
+			</ul>
+		</div><!-- end .footer-block -->
+		
+		<div class="footer-block">
+			<h2>Pages Included</h2>		
+			<ul>
+				<li><a href="404-error.html" title="404 Error">404 Error Page</a></li>
+				<li><a href="blog.html" title="Blog">Blog Page</a></li>
+				<li><a href="contact.html" title="Contact">Contact Page</a></li>
+				<li><a href="full-width.html" title="404 Error">Full Width Template</a></li>
+				<li><a href="no-footer.html" title="About">No Footer Template</a></li>
+				<li><a href="single.html" title="Blog">Single Template</a></li>
+			</ul>
+		</div><!-- end .footer-block -->
+		
+		<div class="footer-block">
+			<h2>About The Fan</h2>	
+			<div class="about-fan">
+				<img src="assets/template/thumbs/fan.jpg" class="aboutimage" alt="About the Fan" />
+				<span>Etiam aliquam dui quis lorem gravida faucibus ut eu orci. Suspendisse posuere scelerisque lectus, ac posuere tortor dapibus sed. Ut ut quam velit, porttitor iaculis nulla. Pellentesque nulla tortor, pharetra ut aliquet sed, pellentesque dictum arcu. Vivamus dignissim urna massa.  Etiam aliquam dui quis lorem gravida faucibus ut eu orci. Suspendisse posuere scelerisque lectus, ac posuere tortor dapibus sed. Ut ut quam velit, porttitor iaculis nulla. Pellentesque nulla tortor, pharetra ut aliquet sed, pellentesque dictum arcu. Vivamus dignissim urna massa. 	</span>
+				<div class="clearfix"></div>
+			</div> <!-- end about me section -->
+
+		</div><!-- end .footer-block -->
+	</div><!-- end .center -->
+	
+	<div id="footer-alt" >
+		<div id="copyright">
+			<p>Copyright &#169; 2010 Premium Football &#124; Designed by <a href="http://jamigibbs.com">Jami Gibbs</a></p>	
+		<div id="footer-nav">
+			<div class="menu-footer-menu-container">
+				<ul id="menu-footer-menu" class="sf-menu">
+					<li class="menu-item"><a href="index.html">Home</a></li>
+					<li class="menu-item"><a href="#">About</a></li>
+					<li class="menu-item"><a href="#">Blog</a></li>
+					<li class="menu-item"><a href="#">Contact</a></li>
+				</ul>
+			</div><!-- end .menu-footer-menu-container -->
+		</div><!-- end #footer-nav -->
+		</div><!-- end #copyright -->
+	</div><!-- end #footer-alt -->
+	
+</div><!-- end #footer -->
+
+	<!-- Cufon Font Replacement Scripts -->
+
+	<script type="text/javascript">
+		Cufon.replace ('#tabs ul.tabnav li a')('#sidebar h2')('.footer-block h2')('#sidebar h2 ')('#posts .page-title')('#posts #comments h3')('.callaction-text')('#home-content h2') ('.blog-title')('#category-posts h2')('.postauthor h4') ;
+	</script>
+	
+	<!-- jQuery Libraries -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="assets/contact.js"></script> 
+	<script type="text/javascript" src="assets/hoverIntent.js"></script> 
+	<script type="text/javascript" src="assets/superfish.js"></script>
+	<script type="text/javascript" src="assets/jquery.nivo.slider.js"></script>	
+
+	<!-- Thumbnail Hover Fade Effect -->
+	<script type="text/javascript">
+	$(function() {
+		$("#tabs").tabs({
+			event: 'mouseover'
+		});
+	});
+	</script>
+
+	<script type="text/javascript">
+	$(function() {
+		$("#featuredvid").tabs({
+		});
+	});
+	</script>
+
+	<script type="text/javascript">
+
+		var $featured_content = jQuery('#slider .slide'),
+			$tabbed_area = jQuery('#tabbed'),
+			$tab_content = jQuery('.tab-content'),
+			$controllers = jQuery('div#controllers'),
+			$all_tabs = jQuery('#all_tabs');
+		
+		if ($tabbed_area.length) {
+			$tabbed_area.tabs();
+		};
+	</script>
+
+	<!-- Navigation -->	
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$("ul.sf-menu").superfish(); 
+	}); 
+
+	<!-- Slider Settings -->
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect:'random',
+			slices:'15',
+			animSpeed:'1000',
+			pauseTime:'8000',
+			startSlide:0,
+			captionOpacity:0.0
+		});
+	});
+	<!-- IMAGE HOVER -->
+	$(document).ready(function() {
+		$('.fadeThis').append('<span class="hover"></span>').each(function () {
+		var $span = $('> span.hover', this).css('opacity', 0);
+		$(this).hover(function () {
+			$span.stop().fadeTo(500, 1);
+		}, function () {
+			$span.stop().fadeTo(500, 0);
+		});
+		});
+	});
+</script>
+	<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

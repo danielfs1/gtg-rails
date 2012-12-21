@@ -1,17 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" class="cufon-active cufon-ready"><head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="Premium Football" />
-    <meta name="robots" content="INDEX,FOLLOW" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Premium Football">
+    <meta name="robots" content="INDEX,FOLLOW">
 
 	<title>Premium Football&nbsp;|&nbsp;Home Page</title>
 
 	<%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= javascript_include_tag "application", :media => "all"  %>
-	<%= csrf_meta_tags %>
+	
+	<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
 	
 	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="ie7.css" /><![endif]-->
 
@@ -25,16 +24,14 @@
 	<div class="center relative">
 	
 	<!-- Logo -->
-	<a href="index.html" title="Premium Football" class="logo" >
-		
-		<img src="/assets/template/logo.png" height="108" width="272" alt="Premium Football" /></a>
-
+	<a href="index.html" title="Premium Football" class="logo"><img src="/assets/template/logo.png" height="108" width="272" alt="Premium Football"></a>
+	
 	<div id="navigation">
 		<div class="menu-header-menu-container">
-			<ul id="menu-header-menu" class="sf-menu">
+			<ul id="menu-header-menu" class="sf-menu sf-js-enabled sf-shadow">
 			<li class="menu-item current-menu-item current_page_item menu-item-home"><a href="index.html">Home</a></li>
-			<li class="menu-item"><a href="#">Templates</a>
-				<ul class="sub-menu">
+			<li class="menu-item"><a href="#" class="sf-with-ul">Templates<span class="sf-sub-indicator"> »</span></a>
+				<ul class="sub-menu" style="display: none; visibility: hidden;">
 					<li class="menu-item"><a href="single.html">Single Template</a></li>
 					<li class="menu-item"><a href="full-width.html">Full Width Template</a></li>
 					<li class="menu-item"><a href="no-footer.html">No Footer Template</a></li>
@@ -53,3 +50,8 @@
 	</div><!-- end .center .relative -->
 
 </div><!-- end #header -->
+
+<div id="content-container">
+<div class="center">
+	<div id="body-wrap">
+		

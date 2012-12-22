@@ -8,7 +8,7 @@
 	<title>Premium Football&nbsp;|&nbsp;Home Page</title>
 
 	<%= stylesheet_link_tag    "application", :media => "all" %>
-	<%= javascript_include_tag "application", :media => "all"  %>
+	<%= javascript_include_tag :all, :recursive => true  %>
 	
 	<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
 	
@@ -24,7 +24,9 @@
 	<div class="center relative">
 	
 	<!-- Logo -->
-	<a href="index.html" title="Premium Football" class="logo"><img src="/assets/template/logo.png" height="108" width="272" alt="Premium Football"></a>
+	<div style="background-color:#fff;opacity:90.5;float:left">
+		<a href="index.html" title="Premium Football" class="logo"><img src="/assets/MainLogo_transparent.png" height="108" width="272" alt="Premium Football"></a>
+	</div>
 	
 	<div id="navigation">
 		<div class="menu-header-menu-container">
@@ -54,4 +56,4 @@
 <div id="content-container">
 <div class="center">
 	<div id="body-wrap">
-		
+		<%= link_to  'new post','/posts/new' %>

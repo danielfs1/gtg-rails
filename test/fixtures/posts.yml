@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  user: 
   title: MyString
-  posttime: 2012-12-16 13:25:48
-  content: MyText
+  postdate: 2012-12-23 21:27:18
+  contents: MyText
 
 two:
-  name: MyString
+  user: 
   title: MyString
-  posttime: 2012-12-16 13:25:48
-  content: MyText
+  postdate: 2012-12-23 21:27:18
+  contents: MyText

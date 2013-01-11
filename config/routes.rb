@@ -1,14 +1,21 @@
 GtgRails::Application.routes.draw do
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   resources :posts
 
+  match '/signup', to: 'users#new'
+#  match '/signout', to: 'sessions#destroy', via: :delete
+  match '/signin', to: 'sessions#new'
 
   get "home/index"
+  get 'auth/login'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #  match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -25,8 +26,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'rspec-rails'
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+#gem 'libv8', '~> 3.11.8'
+gem "twitter-bootstrap-rails"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

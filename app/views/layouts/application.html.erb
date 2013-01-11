@@ -1,6 +1,13 @@
+<%= render :partial => 'layouts/header' %>
+        <div class="row">
+        	<div class="span3">
+	            <%= render :partial => 'layouts/nav' %>
+          	</div><!--/span-->
+          <div class="span9">
+          	<div class="well">
+             <%= yield %>
+            </div>
+          </div>
+        </div><!--/row-->
+<%= render :partial => 'layouts/footer' %>
 
-	<%= render 'layouts/header' %>
-
-	<%= yield %>
-
-	<%= render 'layouts/footer' %>

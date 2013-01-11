@@ -1,14 +1,16 @@
 GtgRails::Application.routes.draw do
   resources :users
-  resources :auth
-
+  resources :sessions, only: [:new, :create, :destroy]
   resources :posts
+
+  match '/signup', to: 'users#new'
+#  match '/signout', to: 'sessions#destroy', via: :delete
+  match '/signin', to: 'sessions#new'
 
   get "home/index"
   get 'auth/login'
 
 
-  match 'auth/login' => 'auth#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
